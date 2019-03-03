@@ -3,7 +3,9 @@ html {
   font-size: 62.5%;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
@@ -25,4 +27,17 @@ h2 {
 
 h3 {
   font-size: 1.9rem;
+}
+
+.pageTitle {
+  font-size: 4rem;
+  text-align: center;
+}
+.image {
+  display: block;
+  margin: 0 auto;
+  width: 30%;
+}
+.paragraph {
+  padding: 20px 80px 50px 80px;
 }
