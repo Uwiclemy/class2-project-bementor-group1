@@ -1,9 +1,12 @@
-import React from 'react';
+import React from "react";
+import Header from "../components/Header";
+import Body from "../components/Body";
 
 const Home = props => {
   return (
     <div>
-      This is the home page
+      <Header />
+      <Body />
     </div>
   );
 };
