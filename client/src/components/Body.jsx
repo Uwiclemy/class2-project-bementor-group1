@@ -4,13 +4,23 @@ class Body extends Component {
   render() {
     return (
       <main className="homePage">
-        <h1 className="pageTitle">Class2 Project</h1>
-        <img
-          className="image"
-          src="//image.shutterstock.com/image-vector/code-bee-logo-design-template-450w-721374241.jpg"
-          alt="code bee logo design template"
-          title="code bee logo design template"
-        />
+        <div className="container">
+          <h2 className="pageSubTitle1">About the Project</h2>
+          <p className="paragraph1">
+            {" "}
+            The Bementor. project is about Le Lorem Ipsum est simplement du faux
+            texte employé dans la composition et la mise en page avant
+            impression. Le Lorem Ipsum est le faux texte standard de
+            l'imprimerie depuis les années 1500, quand un imprimeur anonyme
+            assembla ensemble des morceaux de texte pour réaliser un livre
+            spécimen de polices de texte. Il n'a pas fait que survivre cinq
+            siècles, mais s'est aussi adapté à la bureautique informatique, sans
+            que son contenu n'en soit modifié.
+          </p>
+          <img className="main-image" alt="Female coders" />
+        </div>
+
+        <h2 className="pageSubTitle">About the Team</h2>
         <p className="paragraph">
           Le Lorem Ipsum est simplement du faux texte employé dans la
           composition et la mise en page avant impression. Le Lorem Ipsum est le
@@ -29,3 +39,4 @@ class Body extends Component {
   }
 }
 export default Body;
+
