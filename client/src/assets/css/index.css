@@ -31,7 +31,6 @@ h3 {
   font-size: 1.9rem;
 }
 
-
 #footer-id {
   position: fixed;
   bottom: 0;
@@ -73,6 +72,7 @@ li.org {
   margin-right: 20px;
   float: right;
   display: inline-block;
+}
 
 .header {
   background-image: url(../images/pattern.gif);
@@ -127,7 +127,7 @@ li.org {
   font-size: 4rem;
   text-align: center;
   font-family: "Poppins";
-  margin-top: 20%;
+  margin-top: 14%;
   margin-left: 5%;
   color: #00bc66;
 }
@@ -157,5 +157,4 @@ li.org {
 .container {
   display: flex;
   flex-direction: row;
-
 }
