@@ -31,6 +31,49 @@ h3 {
   font-size: 1.9rem;
 }
 
+#footer-id {
+  position: fixed;
+  bottom: 0;
+  height: 15%;
+  width: 100%;
+  background: #00bc66;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+  color: white;
+}
+
+#footer-id .org {
+  margin-top: 5px;
+}
+
+ul.social_icons img {
+  width: 36px;
+  height: 36px;
+}
+
+ul.social_icons,
+li.social {
+  margin-top: -23px;
+  padding-left: 5px;
+  padding-right: 5px;
+  float: left;
+  display: inline-block;
+}
+
+ul.org_icons img {
+  width: 99px;
+  height: 99px;
+}
+
+ul.org_icons,
+li.org {
+  margin-top: -48px;
+  margin-right: 20px;
+  float: right;
+  display: inline-block;
+}
+
 .header {
   background-image: url(../images/pattern.gif);
   width: 100%;
@@ -84,7 +127,7 @@ h3 {
   font-size: 4rem;
   text-align: center;
   font-family: "Poppins";
-  margin-top: 20%;
+  margin-top: 14%;
   margin-left: 5%;
   color: #00bc66;
 }
@@ -114,46 +157,4 @@ h3 {
 .container {
   display: flex;
   flex-direction: row;
-}
-
-#footer-id {
-  background: #00bc66;
-  padding-top: 30px;
-  padding-bottom: 0px;
-  text-align: center;
-  color: white;
-  clear: both;
-  position: relative;
-  height: 110px;
-}
-
-#footer-id .org {
-  margin-top: -75px;
-}
-
-.social_icons img {
-  width: 36px;
-  height: 36px;
-}
-
-.social {
-  margin-top: -35px;
-  padding-left: 5px;
-  padding-right: 5px;
-  float: left;
-  display: inline-block;
-}
-
-.org_icons img {
-  width: 99px;
-  height: 99px;
-}
-
-.org {
-  margin-top: -80px;
-  margin-right: 120px;
-  float: right;
-  display: inline-block;
-  width: 30px;
-  height: 30px;
 }
