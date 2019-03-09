@@ -3,7 +3,9 @@ html {
   font-size: 62.5%;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
@@ -25,4 +27,47 @@ h2 {
 
 h3 {
   font-size: 1.9rem;
+}
+
+#footer-id {
+  position: fixed;
+  bottom: 0;
+  height: 15%;
+  width: 100%;
+  background: #00bc66;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+  color: white;
+}
+
+#footer-id .org {
+  margin-top: 5px;
+}
+
+ul.social_icons img {
+  width: 36px;
+  height: 36px;
+}
+
+ul.social_icons,
+li.social {
+  margin-top: -23px;
+  padding-left: 5px;
+  padding-right: 5px;
+  float: left;
+  display: inline-block;
+}
+
+ul.org_icons img {
+  width: 99px;
+  height: 99px;
+}
+
+ul.org_icons,
+li.org {
+  margin-top: -48px;
+  margin-right: 20px;
+  float: right;
+  display: inline-block;
 }
