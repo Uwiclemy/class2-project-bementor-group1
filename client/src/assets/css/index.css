@@ -72,9 +72,9 @@ h3 {
 }
 
 .main-image {
-  max-width: 60%;
-  max-height: 60%;
-  content: url(../images/front-image2.gif);
+  max-width: 800px;
+  max-height: 503px;
+  content: url(http://localhost:3000/static/media/front-image2.8c47acf8.gif);
   margin-top: 5%;
   margin-left: 2%;
   margin-right: 2%;
