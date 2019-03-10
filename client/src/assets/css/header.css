@@ -1,0 +1,39 @@
+.header {
+  background-image: url(../images/pattern.gif);
+  width: 100%;
+  height: 300px;
+  position: relative;
+}
+
+.title {
+  font-family: "Poppins";
+  font-size: 90px;
+  font-weight: bold;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  color: #00bc66;
+  padding: 10px 10px 10px 10px;
+}
+
+.nav-bar {
+  margin: auto;
+  padding-top: 1.5%;
+  padding-bottom: 1.5%;
+  padding-right: 7%;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  background-color: #00bc66;
+}
+
+.nav-button {
+  padding-left: 3em;
+  font-family: "Poppins";
+  font-size: 1em;
+  font-weight: lighter;
+  color: white;
+}

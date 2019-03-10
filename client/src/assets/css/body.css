@@ -1,0 +1,44 @@
+.main-image {
+  max-width: 800px;
+  max-height: 503px;
+  content: url(http://localhost:3000/static/media/front-image2.8c47acf8.gif);
+  margin-top: 5%;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+.pageSubTitle1 {
+  font-size: 4rem;
+  text-align: center;
+  font-family: "Poppins";
+  margin-top: 20%;
+  margin-left: 5%;
+  color: #00bc66;
+}
+.paragraph1 {
+  padding: 20px 80px 0px 80px;
+  text-align: center;
+  font-family: "Poppins";
+  margin-top: 10%;
+}
+
+.pageSubTitle {
+  font-size: 4rem;
+  text-align: center;
+  font-family: "Poppins";
+  margin-top: 4%;
+  color: #00bc66;
+}
+
+.paragraph {
+  padding: 20px 80px 50px 80px;
+  text-align: center;
+  font-family: "Poppins";
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+}
