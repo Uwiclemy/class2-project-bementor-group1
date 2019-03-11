@@ -1,0 +1,5 @@
+.user-intro {
+  display: flex;
+  flex-direction: row;
+  background-color: red;
+}
