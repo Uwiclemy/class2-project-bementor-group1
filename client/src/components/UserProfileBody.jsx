@@ -25,6 +25,7 @@ class UserProfileBody extends Component {
         <div className="user-intro">
           <img className="user-image" />
           <h2 className="user-name">Michiel Leyman</h2>
+          <b />
           <h2 className="user-quote">I make useful things for other humans</h2>
         </div>
         <h3 className="user-title1">Campus</h3>

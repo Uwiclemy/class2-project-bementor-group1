@@ -1,5 +1,11 @@
 .user-intro {
   display: flex;
   flex-direction: row;
-  background-color: red;
+}
+
+.user-image {
+  content: url("../images/user.jpg");
+  border-radius: 50%;
+  border-color: #00bc66;
+  border-image-width: 300px;
 }
