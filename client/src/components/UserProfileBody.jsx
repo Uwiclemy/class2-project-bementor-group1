@@ -7,7 +7,11 @@ const interests = [
   "Forth Interest",
   "Fifth Interest"
 ];
-const listInterest = interests.map(interest => <li>{interest}</li>);
+const listInterest = interests.map(interest => (
+  <li>
+    <a className="list">{interest}</a>
+  </li>
+));
 
 const skills = [
   "First skill",
