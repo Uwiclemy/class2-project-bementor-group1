@@ -33,8 +33,15 @@ const UserSchema = mongoose.Schema(
     skills: {
       type: [string],
       required: true
-    }
-  },
+    },
+    mentorStatus: {
+      type: Boolean,
+      default: false
+    },
+    menteeStatus: {
+      type: Boolean,
+      default: false
+    },
   {
     timestamps: true
   }
