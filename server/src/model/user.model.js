@@ -41,7 +41,8 @@ const UserSchema = mongoose.Schema(
     menteeStatus: {
       type: Boolean,
       default: false
-    },
+    }
+  },
   {
     timestamps: true
   }
