@@ -13,7 +13,7 @@ class Footer extends Component {
           <ul className="org_icons">
             <li className="org">
               {" "}
-              <a href="# ">
+              <a href="https://be.okfn.org/">
                 <img
                   className="open-knowledge-logo"
                   src="https://upload.wikimedia.org/wikipedia/commons/0/0e/Open_Knowledge_Belgium_logo_-_small.png"
