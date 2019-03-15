@@ -31,7 +31,7 @@ const UserSchema = mongoose.Schema(
       required: true
     },
     skills: {
-      type: [string],
+      type: [String],
       required: true
     },
     mentorStatus: {
