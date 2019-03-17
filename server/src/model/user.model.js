@@ -11,8 +11,8 @@ const UserSchema = mongoose.Schema(
       required: true
     },
     img: {
-      data: Buffer,
-      contentType: String
+      type: String
+      //contentType: String
     },
     tagLine: {
       type: String,
@@ -31,9 +31,10 @@ const UserSchema = mongoose.Schema(
       required: true
     },
     skills: {
-      type: [String],
+      type: [Object],
       required: true
     },
+
     mentorStatus: {
       type: Boolean,
       default: false

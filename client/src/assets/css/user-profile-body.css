@@ -13,7 +13,7 @@
 }
 
 .user-image {
-  content: url("../images/user.jpg");
+  /*content: url("../images/manju.jpeg");*/
   border-radius: 50%;
   max-width: 250px;
   max-height: 250px;
@@ -99,6 +99,9 @@
   list-style: none;
   font-weight: normal;
   font-size: large;
+}
+li:hover {
+  background-color: green;
 }
 
 .user-skills {
