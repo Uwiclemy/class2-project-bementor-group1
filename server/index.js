@@ -1,15 +1,17 @@
-const express = require('express');
-const mongoose = require('mongoose');
-const bodyParser = require('body-parser');
-const cors = require('cors');
+const express = require("express");
+const mongoose = require("mongoose");
+const bodyParser = require("body-parser");
+const cors = require("cors");
 
-require('dotenv').config();
+require("dotenv").config();
 
 mongoose.Promise = global.Promise;
 mongoose
   .connect(process.env.MONGODB_URL, { useNewUrlParser: true })
-  .then(() => { console.log('Database connection established'); })
-  .catch((err) => {
+  .then(() => {
+    console.log("Database connection established");
+  })
+  .catch(err => {
     console.error(`Database error, exiting. Stack trace:\n${err}`);
     process.exit();
   });
@@ -20,11 +22,11 @@ app.use(cors());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
-app.get('/', (req, res) => {
-  res.json({ message: 'API ready' });
+app.get("/", (req, res) => {
+  res.json({ message: "API ready" });
 });
 
-require('./src/route/mentor.route')(app);
+require("./src/route/mentor.route")(app);
 
 const port = process.env.PORT || 4000;
 app.listen(port, () => {
