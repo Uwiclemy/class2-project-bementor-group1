@@ -1,7 +1,7 @@
 const User = require("../model/user.model");
 
 exports.findAll = (req, res) => {
-  User.findOne()
+  /* User.findOne()
     .then(users => {
       res.send(users);
     })
@@ -9,12 +9,38 @@ exports.findAll = (req, res) => {
       res.status(500).send({
         message: err.message
       });
-    });
+    });*/
+  const user = User.find().then(user => {
+    res.send(user);
+  });
 };
 
 exports.create = (req, res) => {
   const user = new User(req.body);
   user.save().then(user => {
-    return res.json(user);
+    res.json(user);
+  });
+};
+
+exports.delete = (req, res) => {
+  User.deleteOne({
+    _id: req.params.id
+  }).then(() => {
+    res.json({ massage: "The User has been deleted successfully" });
+  });
+};
+
+exports.update = (req, res) => {
+  User.findByIdAndUpdate(
+    { _id: req.params.id },
+    {
+      firstName: req.body.firstName,
+      lastName: req.body.lastName,
+      interests: req.body.interests,
+      tagLine: req.body.tagLine,
+      skills: req.body.skills
+    }
+  ).then(() => {
+    res.json({ massage: `user has been updated` });
   });
 };
