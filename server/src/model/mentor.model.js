@@ -32,7 +32,6 @@ const mentorSchema = new mongoose.Schema(
 mentorSchema.index({
   firstName: "text",
   lastName: "text",
-  img: "image",
   shortBio: "text",
   interests: "text"
 });
