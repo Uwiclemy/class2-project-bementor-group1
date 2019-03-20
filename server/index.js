@@ -27,6 +27,7 @@ app.get("/", (req, res) => {
 });
 
 require("./src/route/mentor.route")(app);
+require("./src/route/user.route")(app);
 
 const port = process.env.PORT || 4000;
 app.listen(port, () => {
