@@ -10,12 +10,7 @@ const mentorSchema = new mongoose.Schema(
       type: String,
       required: true
     },
-    img: {
-      type: String
-      //contentType: String
-    },
-
-    shortBio: {
+    about: {
       type: String,
       required: true
     },
@@ -32,7 +27,7 @@ const mentorSchema = new mongoose.Schema(
 mentorSchema.index({
   firstName: "text",
   lastName: "text",
-  shortBio: "text",
+  about: "text",
   interests: "text"
 });
 

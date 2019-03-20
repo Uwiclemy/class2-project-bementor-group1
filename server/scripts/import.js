@@ -14,7 +14,14 @@ const run = async () => {
 
   const models = users.map(rawMentor => {
     return new Mentor({
-      firstName: rawMentor.firstName
+      firstName: rawMentor.firstName,
+      lastName: rawMentor.lastName,
+      interests: [
+        rawMentor.interest_0,
+        rawMentor.interest_1,
+        rawMentor.interest_2
+      ],
+      about: rawMentor.about
     });
   });
 
