@@ -1,14 +1,15 @@
 import React, { Component } from "react";
-import PropTypes from "prop-types";
+
 import "../assets/css/search-bar.css";
+import { searchMentors } from "../api/mentors";
 
 class SearchBar extends Component {
-  propTypes = {
-    onSearch: PropTypes.func.isRequired
-  };
-
-  handleSubmit = event => {
+  handleSubmit = async event => {
     event.preventDefault();
+    console.log(this.state.query);
+
+    const mentors = await searchMentors(this.state.query);
+    this.props.onSearch(mentors);
   };
 
   handleInputChanged = event => {
