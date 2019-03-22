@@ -24,8 +24,16 @@ const Footer = () => {
         </i>
       </div>
       <div className="app-footer__logos">
-        <a href="https://openknowledge.be" target="_blank">
-          <img src={okBeLogo} alt="Open Knowledge Belgium logo" />
+        <a
+          href="https://openknowledge.be"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            src={okBeLogo}
+            alt="Open Knowledge Belgium logo"
+            rel="noopener noreferrer"
+          />
         </a>
         <a href="https://becentral.org" target="_blank">
           <img src={beCentralLogo} alt="BeCentral logo" />
