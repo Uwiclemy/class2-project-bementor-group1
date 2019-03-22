@@ -1,5 +1,7 @@
 import React from "react";
-import SecondaryHeader from "../components/SecondaryHeader";
+
+import Header from "./MainHeader";
+
 import Footer from "../components/Footer";
 import UserProfileBody from "../components/UserProfileBody";
 
