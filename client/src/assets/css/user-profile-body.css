@@ -13,7 +13,6 @@
 }
 
 .user-image {
-  /*content: url("../images/manju.jpeg");*/
   border-radius: 50%;
   max-width: 250px;
   max-height: 250px;
@@ -121,24 +120,4 @@
   flex-wrap: wrap;
   background-color: #d3d3d3;
   border-radius: 25px;
-}
-
-/* trying */
-.rating {
-  height: 25px;
-  width: 25px;
-  background-color: #00bc66;
-
-  border-radius: 50%;
-  display: inline-block;
-}
-
-.rating_empty {
-  font-size: 200%;
-  height: 25px;
-  width: 25px;
-  background-color: #808580;
-
-  border-radius: 50%;
-  display: inline-block;
 }

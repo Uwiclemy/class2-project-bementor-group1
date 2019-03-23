@@ -23,25 +23,27 @@ class UserProfilePage extends Component {
   }
   renderUser(userprofile) {
     const listInterest = userprofile.interests.map(interest => (
-      <li class="hoverintreset">{interest}</li>
+      <li className="hoverintreset">{interest}</li>
     ));
 
     let listSkills = userprofile.skills.map(obj => {
       let rObjkey = {};
       let rObjrate = {};
       rObjkey = obj.key;
+
       rObjrate = obj.rate;
 
       return (
-        <div>
-          <li>
-            <div>
-              {rObjkey}
-
-              <Rating rate={rObjrate} />
-            </div>
-          </li>
-        </div>
+        <table>
+          <tbody>
+            <tr className="hotel-a">
+              <td>{rObjkey}</td>
+              <td>
+                <Rating rate={rObjrate} />
+              </td>
+            </tr>
+          </tbody>
+        </table>
       );
     });
 
@@ -70,6 +72,7 @@ class UserProfilePage extends Component {
           </div>
           <div className="user-skills-wraper">
             <h3 className="user-skills">Skills</h3>
+
             <ul className="user-skills-list">{listSkills}</ul>
           </div>
         </div>
