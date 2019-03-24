@@ -5,7 +5,7 @@ export const getMentors = () => {
 };
 
 export const searchMentors = query => {
-  return fetch(`${API_URL}/mentor/search?text={query}`).then(response =>
+  return fetch(`${API_URL}/mentor/search?text=${query}`).then(response =>
     response.json()
   );
 };
