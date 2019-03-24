@@ -18,7 +18,8 @@ class App extends Component {
         <Switch>
           <Route path="/:path(|index|home|start)" component={Home} />
           <Route path="/user" component={UserProfile} />
-          <Route path="/search" component={Mentors} />
+          <Route path="/mentors" component={Mentors} />
+          <Route path="/mentors/search" component={Mentors} />
           <Route render={() => <p>Page not found</p>} />
         </Switch>
       </BrowserRouter>
