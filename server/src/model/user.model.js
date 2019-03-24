@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 
-const UserSchema = mongoose.Schema(
+const usersSchema = new mongoose.Schema(
   {
     firstName: {
       type: String,
@@ -12,7 +12,6 @@ const UserSchema = mongoose.Schema(
     },
     img: {
       type: String
-      //contentType: String
     },
     tagLine: {
       type: String,
@@ -34,7 +33,6 @@ const UserSchema = mongoose.Schema(
       type: [Object],
       required: true
     },
-
     mentorStatus: {
       type: Boolean,
       default: false
@@ -49,4 +47,13 @@ const UserSchema = mongoose.Schema(
   }
 );
 
-module.exports = mongoose.model("User", UserSchema);
+usersSchema.index({
+  firstName: "text",
+  lastName: "text",
+  bio: "text",
+  interests: "text",
+  skills: "text"
+});
+
+
+module.exports = mongoose.model("User", usersSchema);

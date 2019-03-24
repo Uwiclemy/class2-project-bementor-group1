@@ -1,12 +1,12 @@
 import React from "react";
-import SecondaryHeader from "./SecondaryHeader";
 import Footer from "../components/Footer";
 import UserProfileBody from "../components/UserProfileBody";
+import MainHeader from './MainHeader';
 
 const UserProfile = props => {
   return (
     <div>
-      <SecondaryHeader />
+      <MainHeader />
       <UserProfileBody />
       <Footer />
     </div>

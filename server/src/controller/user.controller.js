@@ -44,3 +44,16 @@ exports.update = (req, res) => {
     res.json({ massage: `user has been updated` });
   });
 };
+
+exports.search = (req, res) => {
+  const query = req.query.text;
+  User.find({ $text: { $search: query } })
+    .then(mentors => {
+      res.send(mentors);
+    })
+    .catch(err => {
+      res.status(500).send({
+        message: err.message
+      });
+    });
+};
