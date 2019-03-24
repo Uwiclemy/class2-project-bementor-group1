@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+import SecondaryHeader from "./SecondaryHeader";
+import SearchBar from "../components/SearchBar";
 //import MainHeader from "./MainHeader";
 import SearchMentorHeader from "./SearchMentorHeader";
 import SearchMentor from "../components/SearchMentor";
