@@ -17,8 +17,11 @@ class Mentors extends Component {
     };
   }
 
-  componentDidMount() {
-    getUsers();
+  async componentDidMount() {
+    const users = await getUsers();
+    this.setState({
+      users: users
+    });
   }
 
   onSearch = mentors => {

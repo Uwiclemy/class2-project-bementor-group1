@@ -4,6 +4,7 @@ module.exports = app => {
   app.get("/user", users.findAll);
   app.post("/user", users.create);
   app.get("/user/search", users.search);
+  app.get("/user/:id", users.find);
   app.patch("/user/:id", users.update);
   app.delete("/user/:id", users.delete);
 };
