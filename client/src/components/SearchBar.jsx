@@ -1,14 +1,13 @@
 import React, { Component } from "react";
 
 import "../assets/css/search-bar.css";
-import { searchMentors } from "../api/mentors";
+import { searchUsers } from "../api/users";
 
 class SearchBar extends Component {
   handleSubmit = async event => {
     event.preventDefault();
-    console.log(this.state.query);
 
-    const mentors = await searchMentors(this.state.query);
+    const mentors = await searchUsers(this.state.query);
     this.props.onSearch(mentors);
   };
 

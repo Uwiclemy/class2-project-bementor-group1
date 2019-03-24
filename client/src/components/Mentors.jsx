@@ -1,9 +1,11 @@
 import React, { Component } from "react";
-import SearchMentorHeader from "./SearchMentorHeader";
+
 import Footer from "../components/Footer";
+import SearchBar from './SearchBar';
+import MainHeader from './MainHeader';
 
 import "../assets/css/searchMentor.css";
-import SearchBar from './SearchBar';
+import { getUsers } from '../api/users';
 
 class Mentors extends Component {
 
@@ -16,14 +18,7 @@ class Mentors extends Component {
   }
 
   componentDidMount() {
-    fetch("http://localhost:4000/mentor")
-      .then(res => res.json())
-      .then(mentors => {
-        this.setState({
-          isLoaded: true,
-          users: mentors
-        });
-      });
+    getUsers();
   }
 
   onSearch = mentors => {
@@ -32,10 +27,9 @@ class Mentors extends Component {
     });
   };
 
-
   renderProfile(searchProfile) {
-    let shortAbout = searchProfile.about;
-    shortAbout = shortAbout.substring(0, 20) + "...";
+    let shortBio = searchProfile.bio;
+    shortBio = shortBio.substring(0, 20) + "...";
 
     return (
       <div className="user-profile" key={searchProfile._id}>
@@ -48,7 +42,7 @@ class Mentors extends Component {
             <h2 className="user-name1">
               {searchProfile.firstName} {searchProfile.lastName}
             </h2>
-            <h2 className="user-quote1">{shortAbout}</h2>
+            <h2 className="user-quote1">{shortBio}</h2>
           </div>
       </div>
     );
@@ -62,7 +56,7 @@ class Mentors extends Component {
 
     return (
       <div>
-        <SearchMentorHeader />
+        <MainHeader />
         <SearchBar onSearch={this.onSearch} />
         <div className="container1">
           {$searchProfile}

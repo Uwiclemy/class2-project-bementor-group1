@@ -1,5 +1,5 @@
 const mongoose = require("mongoose");
-const Mentor = require("../src/model/mentor.model");
+const User = require("../src/model/user.model");
 
 require("dotenv").config();
 
@@ -10,18 +10,19 @@ const run = async () => {
     useNewUrlParser: true
   });
 
-  const users = require("./mentors.json");
+  const users = require("./users.json");
 
-  const models = users.map(rawMentor => {
-    return new Mentor({
-      firstName: rawMentor.firstName,
-      lastName: rawMentor.lastName,
-      interests: [
-        rawMentor.interest_0,
-        rawMentor.interest_1,
-        rawMentor.interest_2
-      ],
-      about: rawMentor.about
+  const models = users.map(user => {
+    return new User({
+      firstName: user.firstName,
+      lastName: user.lastName,
+      tagLine: user.tagLine,
+      campus: user.campus,
+      bio: user.bio,
+      interests : user.interests,
+      skills: user.skills,
+      mentorStatus: false,
+      menteeStatus: false
     });
   });
 
