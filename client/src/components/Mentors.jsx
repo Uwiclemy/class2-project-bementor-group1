@@ -38,8 +38,7 @@ class Mentors extends Component {
     shortAbout = shortAbout.substring(0, 20) + "...";
 
     return (
-      <div className="container1" key={searchProfile._id}>
-        <div>
+      <div className="user-profile" key={searchProfile._id}>
           <img
             className="user-image1"
             src={"https://api.adorable.io/avatars/285"}
@@ -49,10 +48,8 @@ class Mentors extends Component {
             <h2 className="user-name1">
               {searchProfile.firstName} {searchProfile.lastName}
             </h2>
-            <h2 className="user-quote1">{searchProfile.tagLine}</h2>
-            <p>{shortAbout}</p>
+            <h2 className="user-quote1">{shortAbout}</h2>
           </div>
-        </div>
       </div>
     );
   }
@@ -67,7 +64,9 @@ class Mentors extends Component {
       <div>
         <SearchMentorHeader />
         <SearchBar onSearch={this.onSearch} />
-        <div>{$searchProfile}</div>
+        <div className="container1">
+          {$searchProfile}
+        </div>
         <Footer />
       </div>
     );
