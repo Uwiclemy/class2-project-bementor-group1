@@ -12,7 +12,7 @@ class SecondaryHeader extends Component {
           <ul className="secondary-nav-bar">
             <li className="secondary-nav-button">CONNECT</li>
             <li className="secondary-nav-button">CONTACT</li>
-            <li className="nav-button">SEARCH MENTORS</li>
+            <li className="secondary-nav-button">SEARCH MENTORS</li>
             <li className="secondary-nav-button">LOGIN</li>
           </ul>
         </nav>
