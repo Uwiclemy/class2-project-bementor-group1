@@ -1,3 +1,5 @@
+import Rating from "../components/SkillRating";
+
 import React, { Component } from "react";
 
 class UserProfilePage extends Component {
@@ -5,7 +7,8 @@ class UserProfilePage extends Component {
     super(props);
     this.state = {
       isLoaded: false,
-      users: []
+      users: [],
+      rate: []
     };
   }
   componentDidMount() {
@@ -20,20 +23,27 @@ class UserProfilePage extends Component {
   }
   renderUser(userprofile) {
     const listInterest = userprofile.interests.map(interest => (
-      <li>{interest}</li>
+      <li className="hoverintreset">{interest}</li>
     ));
 
     let listSkills = userprofile.skills.map(obj => {
       let rObjkey = {};
       let rObjrate = {};
       rObjkey = obj.key;
+
       rObjrate = obj.rate;
-      console.log("key", obj.key);
-      console.log("rate", obj.rate);
+
       return (
-        <li>
-          {rObjkey} {rObjrate}
-        </li>
+        <table>
+          <tbody>
+            <tr className="hotel-a">
+              <td>{rObjkey}</td>
+              <td>
+                <Rating rate={rObjrate} />
+              </td>
+            </tr>
+          </tbody>
+        </table>
       );
     });
 
@@ -62,6 +72,7 @@ class UserProfilePage extends Component {
           </div>
           <div className="user-skills-wraper">
             <h3 className="user-skills">Skills</h3>
+
             <ul className="user-skills-list">{listSkills}</ul>
           </div>
         </div>

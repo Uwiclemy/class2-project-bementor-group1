@@ -13,7 +13,6 @@
 }
 
 .user-image {
-  /*content: url("../images/manju.jpeg");*/
   border-radius: 50%;
   max-width: 250px;
   max-height: 250px;
@@ -100,7 +99,7 @@
   font-weight: normal;
   font-size: large;
 }
-li:hover {
+.hoverintreset:hover {
   background-color: green;
 }
 
