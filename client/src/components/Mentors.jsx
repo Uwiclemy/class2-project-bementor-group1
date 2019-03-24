@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import MainHeader from "./MainHeader";
+import SecondaryHeader from "./SecondaryHeader";
 import SearchBar from "../components/SearchBar";
 import Footer from "../components/Footer";
 import { findMentors } from "../api/mentors";
@@ -14,7 +14,7 @@ class Mentors extends Component {
   render() {
     return (
       <div>
-        <MainHeader />
+        <SecondaryHeader />
         <SearchBar onSearch={this.onSearch} />
 
         <Footer />
