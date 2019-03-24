@@ -12,6 +12,7 @@ class MainHeader extends Component {
           <ul className="nav-bar">
             <li className="nav-button">CONNECT</li>
             <li className="nav-button">CONTACT</li>
+            <li className="nav-button">SEARCH MENTORS</li>
             <li className="nav-button">LOGIN</li>
           </ul>
         </nav>
