@@ -6,8 +6,8 @@ import * as serviceWorker from "./serviceWorker";
 import "normalize.css";
 import "./assets/css/index.css";
 import "./assets/css/user-profile.css";
-import "./assets/css/searchbar.css";
 import "./assets/css/searchMentor.css";
+import "./assets/css/searchMentorHeader.css";
 
 ReactDOM.render(<App />, document.getElementById("root"));
 

@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 
 import "../assets/css/search-bar.css";
-import { searchMentors } from "../api/mentors";
+//import { searchMentors } from "../api/mentors";
 
-class SearchBar extends Component {
+class SearchMentor extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -49,22 +49,26 @@ class SearchBar extends Component {
     this.setState({
       searchquery: event.target.value
     });*/
-
+    // filter mentor on the basis of name...
     const mentors_profiles = this.state.users.filter(
       mentors =>
         mentors.firstName.toLowerCase().includes(searchText.toLowerCase()) |
         mentors.lastName.toLowerCase().includes(searchText.toLowerCase())
     );
 
-    //this.setState({ users: mentors_profiles });
-    this.setState({ filterdMentor: mentors_profiles });
-    console.log("filteredContacts:", this.state.filteredContacts);
+    //filter mentor on the basis of skills...
 
-    console.log("mentors_profiles:", this.state.mentors_profiles);
+    this.setState({ filterdMentor: mentors_profiles });
+
+    //console.log("mentors_profiles:", mentors_profiles);
   }
 
   renderSerach(searchProfile) {
     //console.log("filterdMentor: ", this.filterdMentor);
+    let shortbio = "";
+    shortbio = searchProfile.bio;
+    shortbio = shortbio.substring(0, 20) + "...";
+
     return (
       <div className="container1" key={searchProfile._id}>
         <div>
@@ -78,6 +82,7 @@ class SearchBar extends Component {
               {searchProfile.firstName} {searchProfile.lastName}
             </h2>
             <h2 className="user-quote1">{searchProfile.tagLine}</h2>
+            <p>{shortbio}</p>
           </div>
         </div>
         {/* <div className="mentorprofile">
@@ -112,4 +117,4 @@ class SearchBar extends Component {
   }
 }
 
-export default SearchBar;
+export default SearchMentor;
