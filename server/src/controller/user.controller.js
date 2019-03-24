@@ -1,7 +1,7 @@
 const User = require("../model/user.model");
 
 exports.findAll = (req, res) => {
-  /* User.findOne()
+  User.find()
     .then(users => {
       res.send(users);
     })
@@ -9,10 +9,21 @@ exports.findAll = (req, res) => {
       res.status(500).send({
         message: err.message
       });
-    });*/
-  const user = User.find().then(user => {
-    res.send(user);
-  });
+    });
+};
+
+exports.find = (req, res) => {
+  User.findOne({
+    _id: req.params.id
+  })
+    .then(user => {
+      res.send(user);
+    })
+    .catch(err => {
+      res.status(500).send({
+        message: err.message
+      });
+    });
 };
 
 exports.create = (req, res) => {
