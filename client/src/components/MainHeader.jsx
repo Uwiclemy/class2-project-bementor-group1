@@ -11,22 +11,22 @@ class MainHeader extends Component {
         <nav>
           <ul className="nav-bar">
             <li className="nav-button">
-              <a href="/page/Home" title="Home">
+              <a href="/Home" title="Home">
                 Home
               </a>
             </li>
             <li className="nav-button">
-              <a href="/page/contact" title="Contact">
+              <a href="/contact" title="Contact">
                 Contact
               </a>
             </li>
             <li className="nav-button">
-              <a href="/page/contact" title="Search Mentor">
+              <a href="/Mentors" title="Search Mentor">
                 Search
               </a>
             </li>
             <li className="nav-button">
-              <a href="/page/contact" title="Login">
+              <a href="/Login" title="Login">
                 Login
               </a>
             </li>
