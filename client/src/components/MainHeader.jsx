@@ -10,10 +10,26 @@ class MainHeader extends Component {
 
         <nav>
           <ul className="nav-bar">
-            <li className="nav-button">Home</li>
-            <li className="nav-button">Contact</li>
-            <li className="nav-button">Search Mentor</li>
-            <li className="nav-button">Login</li>
+            <li className="nav-button">
+              <a href="/page/Home" title="Home">
+                Home
+              </a>
+            </li>
+            <li className="nav-button">
+              <a href="/page/contact" title="Contact">
+                Contact
+              </a>
+            </li>
+            <li className="nav-button">
+              <a href="/page/contact" title="Search Mentor">
+                Search
+              </a>
+            </li>
+            <li className="nav-button">
+              <a href="/page/contact" title="Login">
+                Login
+              </a>
+            </li>
           </ul>
         </nav>
       </div>
