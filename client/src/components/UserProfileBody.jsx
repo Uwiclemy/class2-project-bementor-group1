@@ -12,7 +12,7 @@ class UserProfilePage extends Component {
     };
   }
   componentDidMount() {
-    fetch("http://localhost:4000/user")
+    fetch("http://localhost:4000/api/user")
       .then(res => res.json())
       .then(json => {
         this.setState({
