@@ -1,38 +1,33 @@
 .contact-info {
   font-family: "aileron", sans-serif;
-  background: rgb(76, 177, 76);
-  border-radius: 10px;
+  background: #00bc66;
   color: #fff;
-  padding: 30px;
+  padding-left: 200px;
   position: relative;
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
 }
 
 .contact-info-address {
   position: relative;
-  padding-left: 80px;
+  padding-left: 180px;
   margin-bottom: 30px;
   line-height: 2;
-  min-height: 40px;
+  min-height: 50px;
 }
 
 .contact-info-email {
   position: relative;
-  padding-left: 80px;
+  padding-left: 180px;
   margin-bottom: 30px;
-  line-height: 2;
-  min-height: 40px;
+  min-height: 30px;
 }
 
 .contact-infos-tel {
   position: relative;
-  padding-left: 80px;
+  padding-left: 180px;
   margin-bottom: 30px;
-  line-height: 2;
-  min-height: 40px;
+  min-height: 50px;
+}
+
+.fas fa-map-marker {
+  content: "\f041";
 }
